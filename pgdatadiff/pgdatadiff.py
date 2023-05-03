@@ -161,7 +161,7 @@ class DBDiff(object):
         if firstvalue > secondvalue:
             return False, f"first sequence is greater than" \
                           f" the second({firstvalue} vs {secondvalue})."
-        return True, f"sequences are identical- ({firstvalue})."
+        return True, f"sequences are identical - ({firstvalue})."
 
     def diff_all_sequences(self):
         print(bold(red(f'Starting sequence analysis for schema -> {self.schema}')))
